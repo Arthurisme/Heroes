@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Angular 2 Demo</title>
+
+  <!-- Load depedencies  -->
+  <!--<script src="  https://npmcdn.com/@angular/common@2.0.0-rc.3/bundles/angular2-polyfills.js   "></script>-->
+
+    <script src="./node_modules/zone.js/dist/zone.js"></script>
+    <script src="./node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="https://npmcdn.com/typescript@1.7.5/lib/typescript.js"></script>
+  <script src="https://npmcdn.com/systemjs@0.19.8/dist/system.src.js"></script>
+  <script src="https://npmcdn.com/rxjs@5.0.0-beta.0/bundles/Rx.js   "></script>
+  <!--<script src="https://npmcdn.com/angular@2.0.0-rc.3/bundles/angular2.dev.js"></script>-->
+  <!--<script src="  https://npmcdn.com/@angular/common@2.0.0-rc.3/bundles/angular2.dev.js   "></script>-->
+
+
+  <!--<script src="  https://npmcdn.com/rxjs@5.0.0-beta.6/   "></script>-->
+   <script src="  https://npmcdn.com/angular2-in-memory-web-api/index.js   "></script>
+   <script src="  https://npmcdn.com/@angular/common@2.0.0-rc.3/bundles/common.umd.js   "></script>
+   <script src="  https://npmcdn.com/@angular/compiler@2.0.0-rc.3/bundles/compiler.umd.js   "></script>
+   <script src="  https://npmcdn.com/@angular/core@2.0.0-rc.3/bundles/core.umd.js   "></script>
+   <script src="  https://npmcdn.com/@angular/http@2.0.0-rc.3/bundles/http.umd.js   "></script>
+   <script src="  https://npmcdn.com/@angular/platform-browser@2.0.0-rc.3/bundles/platform-browser.umd.js   "></script>
+   <script src="  https://npmcdn.com/@angular/platform-browser-dynamic@2.0.0-rc.3/bundles/platform-browser-dynamic.umd.js   "></script>
+   <!--<script src="  https://npmcdn.com/@angular/router-deprecated@2.0.0-rc.3/bundles/router-deprecated.umd.js   "></script>-->
+   <script src="  https://npmcdn.com/@angular/upgrade@2.0.0-rc.3/bundles/upgrade.umd.js   "></script>
+   <script src="  https://npmcdn.com/@angular/router@3.0.0-alpha.6/index.js   "></script>
+
+
+
+
+
+
+
+
+  <script>
+
+    /*
+	Config the transpiler to be typescript.
+    */
+    System.config({transpiler: 'typescript'});
+
+    //load our hello-world component
+    System.import('./hello-world/hello-world.ts'); 
+  </script>
+</head>
+<body>
+  <!-- User defined component  -->
+  <hello-world></hello-world>
+</body>
+</html>
